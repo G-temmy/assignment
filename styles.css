@@ -253,9 +253,8 @@ nav .hamburger.active .bar {
   background: var(--primary-color);
 }
 
-.about-img {
+.projects {
   margin: 30px;
-
   color: var(--black);
   text-align: center;
 }
