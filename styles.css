@@ -6,12 +6,12 @@
 }
 
 :root {
-  --text-color: #0099ff;
-  --bg-color: #3b3535;
+  --text-color: #a37878;
+  --bg-color: #a8a3a394;
   --white: #fff;
   --black: #000;
-  --mob-color: #444444;
-  --primary-color: #3f3c3c;
+  --mob-color: #000000;
+  --primary-color: #494646;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
@@ -26,7 +26,7 @@ body {
 }
 
 header {
-  background: var(--bg-color);
+  background: var(--primary-color);
   height: 90px;
   display: flex;
   align-items: center;
@@ -45,12 +45,12 @@ nav .logo {
 nav .logo a {
   text-decoration: none;
   font-size: 12px;
-  font-weight: 1000;
+  font-weight: 800;
   color: var(--white);
 }
 
 nav .logo a span {
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 nav ul {
@@ -111,12 +111,12 @@ nav .hamburger.active .bar {
 /* Home section*/
 .home {
   background: var(--bg-color);
-  position: absolute;
+
   top: 0;
   width: 100%;
   height: 100vh;
   z-index: -1;
-  padding: 250px 0 50px;
+  padding: 50px 0 30px;
 }
 
 .home .home-info {
@@ -133,17 +133,17 @@ nav .hamburger.active .bar {
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: var(--white);
+  color: var(--primary-color);
   border-radius: 25px;
 }
 .left h1 {
-  font-size: 4.5rem;
-  color: var(--white);
+  font-size: 2.5rem;
+  color: var(--primary-color);
   margin: 10px 0;
 }
 
 .left h4 {
-  color: var(--white);
+  color: var(--primary-color);
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -156,7 +156,7 @@ nav .hamburger.active .bar {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
-  color: #c3c3c3;
+  color: var(--primary-color);
   mask-border: 50px;
   margin-bottom: 15px;
   text-align: justify;
@@ -203,7 +203,7 @@ nav .hamburger.active .bar {
 
 /* Skills Section */
 .skills {
-  padding: 80px 0;
+  padding: 20px;
   background: var(--primary-color);
 }
 
@@ -222,13 +222,19 @@ nav .hamburger.active .bar {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 20px;
 }
-
+.skill-card h1 {
+  font-size: 1.5rem;
+}
+.skill-card p {
+  font-size: 1rem;
+}
 .skill-card {
   background: var(--bg-color);
   padding: 25px;
   text-align: center;
   border-radius: 12px;
   font-weight: 600;
+  font-size: 0.5rem;
   border-bottom: 3px solid var(--text-color);
   transition: var(--transition);
   color: var(--white);
@@ -240,17 +246,49 @@ nav .hamburger.active .bar {
   transform: translateY(-5px);
 }
 
+/* About Section */
+.about {
+  padding: 80px 0;
+  margin: 30px 0;
+  background: var(--primary-color);
+}
+
+.about-img {
+  margin: 30px;
+
+  color: var(--black);
+  text-align: center;
+}
+
+.img {
+  width: 800px;
+  height: auto;
+  padding: 80px;
+  display: block;
+  margin: 0 auto;
+}
 /* --- Contact Section --- */
 .contact {
   padding: 80px 0;
   text-align: center;
+  color: var(--black);
 }
 
 .contact-info a {
-  color: var(--white);
+  color: rgb(49, 49, 155);
   text-decoration: none;
   font-weight: 500;
   margin: 0 10px;
+  display: block;
+  justify-content: center;
+  gap: 10px;
+}
+.footer {
+  background: #111; /* dark background */
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 15px;
 }
 
 /* Media Screen */

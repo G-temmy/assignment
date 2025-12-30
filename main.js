@@ -22,7 +22,12 @@ window.addEventListener("scroll", () => {
 });
 
 const typed = new Typed(".multiple", {
-  strings: ["Frontend Developer", "Web Designer", "Problem Solver"],
+  strings: [
+    "Frontend Developer",
+    "Web Designer",
+    "Problem Solver",
+    "Backend Developer",
+  ],
   typeSpeed: 80,
   backSpeed: 60,
   backDelay: 1500,

@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Gloria</title>
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
       <div class="container">
         <nav>
-          <div class="logo">
-            <a href="#">Omofoye <span>GLoria</span> </a>
-          </div>
+          <div class="logo"></div>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+
           <button class="hamburger">
             <div class="bar"></div>
           </button>
@@ -25,63 +27,110 @@
       </div>
     </header>
 
-    <section class="home">
-      <div class="container">
-        <div class="home-info">
-          <div class="left">
-            <h3>Hello, I'm</h3>
-            <h1>Omofoye Gloria</h1>
-            <h4>And I am a <span class="multiple"></span></h4>
-            <p>
-              Hi! I am a passionate frontend developer with a knack for creating
-              beautiful and functional web experiences. With a strong foundation
-              in HTML, CSS, and JavaScript, I bring designs to life and ensure
-              seamless user interactions.
-            </p>
-            <div class="btn">
-              <button>Hire Me</button>
+    <main>
+      <!-- HOME SECTION -->
+      <section id="home" class="home">
+        <div class="container">
+          <div class="home-info">
+            <div class="left">
+              <h3>Hello, I'm</h3>
+              <h1>Omofoye Gloria Oluwaseun<br />BU23CSC1045</h1>
+              <h4>And I am a <span class="multiple"></span></h4>
             </div>
-          </div>
-          <div class="right">
-            <div class="profile">
-              <img src="img/Gloria.jpeg" alt="" />
+
+            <div class="right">
+              <div class="profile">
+                <img src="img/Gloria.jpeg" alt="Profile Image" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section id="skills" class="skills">
+      </section>
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about">
         <div class="container">
-          <h2 class="section-title">My <span>Skills</span></h2>
-          <div class="skills-grid">
-            <div class="skill-card">HTML5</div>
-            <div class="skill-card">CSS3</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">React</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Responsive Design</div>
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Hi, I am a 300 level student of Bowen University studying
+                Computer Science. I am from Osun State and live in Ibadan, Oyo
+                State, Nigeria. I am an aspiring full-stack developer interested
+                in creating beautiful and interactive web pages.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <!-- PROJECTS SECTION -->
+      <section class="projects">
         <div class="container">
-          <h2 class="section-title">Get In <span>Touch</span></h2>
-          <div class="contact-info">
-            <p>
-              Email:
-              <a href="mailto:gloriaomofoye@gmail.com"
-                >gloriaomofoye@gmail.com</a
-              >
-            </p>
-            <p>
-              GitHub:
-              <a href="https://github.com/G-temmy" target="_blank">G-temmy</a>
-            </p>
+          <h1>My Projects</h1>
+          <img class="img" src="img/Capture.PNG" alt="Project Image" />
+          <p>A food delivery web app</p>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h1>Frontend</h1>
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+              <h1>Backend</h1>
+              <p>Python</p>
+              <p>React.js</p>
+              <p>Java</p>
+            </div>
+
+            <div class="skill-card">
+              <h1>Tools</h1>
+              <p>Git & GitHub</p>
+              <p>VS Code</p>
+              <p>Google Colab</p>
+            </div>
           </div>
         </div>
       </section>
-    </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <p>
+            Email:
+            <a href="mailto:gloriaomofoye@gmail.com">gloriaomofoye@gmail.com</a>
+          </p>
+          <p>
+            GitHub:
+            <a href="https://github.com/G-temmy" target="_blank">G-temmy</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <p>© 2025 Gloria Portfolio | All Rights Reserved</p>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js"></script>
+    <script>
+      window.onload = function () {
+        alert("Welcome to My webpage!");
+      };
+    </script>
   </body>
 </html>
