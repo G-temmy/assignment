@@ -16,7 +16,7 @@
 }
 body {
   background: var(--bg-color);
-
+  color: var(--white);
   overflow-x: hidden;
 }
 .container {
@@ -45,7 +45,7 @@ nav .logo {
 nav .logo a {
   text-decoration: none;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 1000;
   color: var(--white);
 }
 
